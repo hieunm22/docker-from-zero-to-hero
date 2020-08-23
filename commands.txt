@@ -1,0 +1,22 @@
+docker run --name mysql_start -e MYSQL_DATABASE=helloworld -e MYSQL_USER=sa -e MYSQL_PASSWORD=123456 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 mysql:8
+
+homework:
+- exec container
+- mount volume
+- inspect container ip
+- docker compose
+
+- create new docker network with 3 components: 
+ + mysql
+ + reddit
+ + rabitmq
+- worker: api message from rabitmq -> write mysql, reddit
+
+
+
+
+
+
+
+
+
